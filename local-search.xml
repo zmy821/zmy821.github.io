@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>Hexo博客搭建</title>
+    <link href="/2021/07/25/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <url>/2021/07/25/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    
+    <content type="html"><![CDATA[<p>Hexo Blog搭建</p><p>1：安装前提<br>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><p>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)<br>Git</p><p>如果你的电脑上已经安装过以上两个应用程序，则可以进行Hexo 的安装。</p><p>2：安装Hexo<br>安装 Hexo<br>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><pre><code>$ npm install -g hexo-cli</code></pre><p>进阶安装和使用<br>对于熟悉 npm 的进阶用户，可以仅局部安装 hexo 包。</p><pre><code>$ npm install hexo</code></pre><p>安装以后，可以使用以下两种方式执行 Hexo：</p><pre><code>npx hexo &lt;command&gt;</code></pre><p>将Hexo所在的目录下的 node_modules 添加到环境变量之中即可直接使用<br>hexo<command>：</p><pre><code>echo &#39;PATH=&quot;$PATH:./node_modules/.bin&quot;&#39; &gt;&gt; ~/.profile</code></pre><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><pre><code>$ hexo init &lt;folder&gt;$ cd &lt;folder&gt;$ npm install</code></pre><p>新建完成后，指定文件夹的目录如下：</p><pre><code>.├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _posts└── themes</code></pre><p>_config.yml<br>网站的 配置 信息，您可以在此配置大部分的参数。<br>3：运行hexo项目</p><p>1：第一步打开终端在项目根目录输入：</p><pre><code>$ hexo g</code></pre><p>2：第二步：</p><pre><code>$ hexo s</code></pre><p>3：第三步：<br>本地浏览器访问： <a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p><p>4：Hexo常用命令</p><p>init</p><pre><code>$ hexo init</code></pre><p>初始化一个hexo项目<br>new</p><pre><code>$ hexo new [layout] &lt;title&gt;</code></pre><p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p><pre><code>$ hexo new &quot;post title with whitespace&quot;</code></pre><p>generate</p><pre><code>$ hexo generate</code></pre><p>生成静态文件</p><p>该命令可以简写为</p><pre><code>$ hexo g</code></pre><p>publish</p><pre><code>$ hexo publish [layout] &lt;filename&gt;</code></pre><p>发表草稿。</p><p>server</p><pre><code>$ hexo server</code></pre><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/%E3%80%82">http://localhost:4000/。</a></p><p>选项    描述<br>-p, –port    重设端口<br>-s, –static    只使用静态文件<br>-l, –log    启动日记记录，使用覆盖记录格式</p><p>deploy</p><pre><code>$ hexo deploy</code></pre><p>部署网站。</p><p>参数    描述<br>-g, –generate    部署之前预先生成静态文件<br>该命令可以简写为：</p><pre><code>$ hexo d</code></pre><p>render</p><pre><code>$ hexo render &lt;file1&gt; [file2] ...</code></pre><p>渲染文件。</p><p>参数    描述<br>-o, –output    设置输出路径<br>migrate</p><pre><code>$ hexo migrate &lt;type&gt;</code></pre><p>从其他博客系统 迁移内容。</p><p>clean</p><pre><code>$ hexo clean</code></pre><p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p><p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2021/07/22/hello-world/"/>
     <url>/2021/07/22/hello-world/</url>
